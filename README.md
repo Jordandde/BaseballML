@@ -1,0 +1,1 @@
+This is a model to predict whether or not a player will be nominated for the hall of fame, and whether or not a nominated player will be inducted. The all data is extracted from the Sean Lahman Baseball database.
