@@ -16,7 +16,7 @@ def sim(df, img, depth):
     Y_true = X_test["Class"]
     X_test = X_test.drop(["Class"], axis=1)
 
-    clf = DecisionTreeClassifier(max_depth=depth, random_state = 13, min_samples_split=10, min_samples_leaf=7, min_impurity_decrease=0.0105)
+    clf = DecisionTreeClassifier(max_depth=depth, random_state = 13, min_samples_split=10, min_samples_leaf=7)
     clf.fit(X_train, Y_train)
     y_pred = clf.predict(X_test)
     print(confusion_matrix(Y_true, y_pred))
